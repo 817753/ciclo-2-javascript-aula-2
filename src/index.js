@@ -1,19 +1,22 @@
 // Desafio 1
 //Você foi chamado para ajudar a pintar uma parede em uma casa.
-// A parede tem formato retangular, e você precisa saber quantos metros quadrados de tinta serão necessários para cobri-la. Para isso, você deve calcular a área da parede.
+// A parede tem formato retangular, e você precisa saber quantos metros quadrados de tinta serão nevcessários para cobri-la. Para isso, você deve calcular a área da parede.
 // A parede tem 4 metros de altura e 5 metros de largura.
 
 //Para calcular a área de um retângulo, usamos a seguinte fórmula:
-// area = largura * altura;
+
+var altura = 4;
+var largura = 5;
+
+var area = largura * altura;
 
 // Dimensões da parede (largura e altura em metros)
-var largura = 5;
-var altura = 4;
+
 
 // Calculando a área da parede
 
 // Exibindo o resultado no console
-console.log("A área da parede é:");
+console.log("largura  A área da parede é:" + area);
 
 //-------------------------------------------------------------------------------------------------
 
@@ -25,15 +28,15 @@ console.log("A área da parede é:");
 // usuário e exibir uma mensagem de boas-vindas.
 
 // Nome e sobrenome inseridos pelo usuário
-var nome = "João";
-var sobrenome = "Silva";
+var nome = "Leonardo";
+var sobrenome = "Romero";
 
 // Juntando os nomes com a mensagem de boas-vindas
   
        //seu código
 
 // Exibindo a mensagem no console
-console.log();
+console.log(`Boas Vindas ${nome} ${sobrenome}`);
 
 
 //-------------------------------------------------------------------------------------------------
@@ -51,11 +54,11 @@ var idadeEmAnos = 30;
 
 // Calculando anos em dias
   
-      //seu código
+var diasVividos = idadeEmAnos * 365;
 
 
 // Exibindo o resultado no console
-console.log("O funcionário viveu aproximadamente... dias");
+console.log(`O funcionário viveu aproximadamente ${diasVividos} dias`);
 
 //-------------------------------------------------------------------------------------------------
 
@@ -71,9 +74,10 @@ console.log("O funcionário viveu aproximadamente... dias");
 var duracaoEmMinutos = 135;
 
 // Calculando horas e minutos
-  
-      //seu código
-
+var horas = Math.floor(duracaoEmMinutos / 60);  // Obtendo as horas inteiras
+var minutos = duracaoEmMinutos % 60;            // Obtendo os minutos restantes
+    
 
 // Exibindo o resultado no console
-console.log("O evento durou ...horas e ... minutos.");
+console.log("O evento durou " + horas + " horas e " + minutos + " minutos.");
+
